@@ -1,16 +1,17 @@
 body{ margin:0; padding:0; font-size:12px; line-height:normal; font-family:Tahoma, Geneva, sans-serif; }
-h1, h2, h3, h4, h5, h6 { padding:0; margin:0; font-weight:normal; line-height:normal; }
+h1, h2{ padding:0; margin:0; font-weight:normal; line-height:normal; }
 h1{ margin-bottom:10px; font-size:18px; }
 a{outline:none;}
 .clear{ clear:both;}
 .wrapper{ width:500px; margin:0 auto;}
-.slider{ width:500px; height:123px; margin:0; padding:0; position:relative; overflow:hidden; }
-.sliderMover{ position:relative; left:0; top:0;}
-.sliderBox{ width:inherit; background:#CCC; padding:10px; position:absolute; left:0; top:0;}
-.sliderThumb{ width:98px; border:1px solid #000; display:block; float:left; margin-right:10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
-.sliderContent{ width:360px; padding-right:10px; float:left;}
+.slider{ width:500px; height:123px; margin:0; padding:0; position:relative; overflow:hidden; border:1px solid #dadada; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.sliderMover{ position:relative; left:0; top:0; height:inherit; background:#eee;}
+.sliderBox{ width:500px; height:inherit; position:absolute; left:0; top:0;}
+.sliderThumb{ width:98px; border:1px solid #000; display:block; float:left; margin:10px 10px 0; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.sliderContent{ width:360px; padding:10px 10px 0 0; float:left;}
 .sliderContent h2{ font-size:14px; font-weight:bold; margin:0 0 5px 0;}
 .sliderContent p{ line-height:normal; margin:0; padding:0;}
 .sliderContent p + p{padding:5px 0 0 0;}
-.leftImg{ background:url(../images/ArrowLeft.png) left top no-repeat; display:block; width:16px; height:16px; position:absolute; left:5px; top:62px; }
-.rightImg{ background:url(../images/ArrowRight.png) left top no-repeat; display:block; width:16px; height:16px; position:absolute; right:5px; top:62px; }
+.movingArrow {background-image:url(../images/movingArrows.png); display:block; width:16px; height:16px; position:absolute; top:55px; }
+.movingArrow.leftImg{ background-position:0 0; left:5px; }
+.movingArrow.rightImg{ background-position:16px 0; right:5px; }
